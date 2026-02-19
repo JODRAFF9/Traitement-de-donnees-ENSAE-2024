@@ -3,7 +3,7 @@ pacman::p_load(
   dplyr
   )
 
-# Function to pply a data dict to a dataframe (renaming, relabelliing, type setting)
+# Function to apply a data dict to a dataframe (renaming, relabelliing, type setting)
 apply_var_dictionary <- function(df, dict) {
 
   stopifnot(all(c("var_orig", "var_new", "type_new", "keep") %in% names(dict)))
